@@ -297,3 +297,6 @@ footer > a:last-child { margin-left: auto; color: var(--wine); font-size: 13px; 
  .contact-grid>div{min-width:0}
  .schedule p{flex-wrap:wrap;gap:4px 12px}
 }
+@media(max-width:600px){
+ .contact h2{font-size:clamp(30px,8.5vw,42px);overflow-wrap:anywhere}
+}
