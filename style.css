@@ -291,3 +291,9 @@ footer > a:last-child { margin-left: auto; color: var(--wine); font-size: 13px; 
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+@media(max-width:600px){
+ .contact-grid{grid-template-columns:minmax(0,1fr)}
+ .contact-grid>div{min-width:0}
+ .schedule p{flex-wrap:wrap;gap:4px 12px}
+}
