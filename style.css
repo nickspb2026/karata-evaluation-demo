@@ -300,3 +300,6 @@ footer > a:last-child { margin-left: auto; color: var(--wine); font-size: 13px; 
 @media(max-width:600px){
  .contact h2{font-size:clamp(30px,8.5vw,42px);overflow-wrap:anywhere}
 }
+@media(max-width:600px){
+ #estimate button[type="submit"]{scroll-margin-bottom:110px}
+}
