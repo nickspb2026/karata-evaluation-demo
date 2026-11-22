@@ -139,3 +139,15 @@ document.getElementById('copy').addEventListener('click', async () => {
     document.getElementById('copy-status').textContent = 'Выделите текст и скопируйте вручную.';
   }
 });
+
+document.querySelectorAll('[data-item]').forEach(button => {
+  button.addEventListener('click', () => {
+    form.querySelector('input[name="category"][value="Золото"]').checked = true;
+    updateCategory();
+    document.getElementById('description').value = button.dataset.item;
+    document.getElementById('description').setCustomValidity('');
+    form.hidden = false;
+    document.getElementById('receipt').hidden = true;
+    document.getElementById('quote').scrollIntoView({behavior:'smooth',block:'start'});
+  });
+});

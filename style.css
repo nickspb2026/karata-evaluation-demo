@@ -303,3 +303,69 @@ footer > a:last-child { margin-left: auto; color: var(--wine); font-size: 13px; 
 @media(max-width:600px){
  #estimate button[type="submit"]{scroll-margin-bottom:110px}
 }
+
+.gold-details{padding-block:15px 70px}
+.gold-types{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:50px}
+.gold-types button{min-height:58px;padding:14px;border:1px solid var(--line);background:var(--paper);color:var(--ink);text-align:left;border-radius:4px}
+.gold-types button:hover{border-color:var(--wine);color:var(--wine)}
+.price-layout{display:grid;grid-template-columns:1fr 1.2fr;gap:60px}
+.price-layout>div>p:not(.eyebrow){max-width:35ch;margin:20px 0;color:var(--muted);font-size:15px}
+.price-layout table{border-collapse:collapse;width:100%;font-size:15px}
+.price-layout caption{text-align:left;font-size:13px;color:var(--muted);padding-bottom:12px}
+.price-layout th,.price-layout td{border-bottom:1px solid var(--line);padding:14px 10px;text-align:left;font-weight:400}
+.price-layout thead th{font-weight:650;background:var(--paper)}
+.price-layout td{white-space:nowrap;text-align:right}
+.price-layout thead th:last-child{text-align:right}
+@media(max-width:600px){
+ .gold-details{padding-block:0 40px}
+ .gold-types{grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:35px}
+ .gold-types button{font-size:14px}
+ .price-layout{grid-template-columns:minmax(0,1fr);gap:24px}
+ .price-layout th,.price-layout td{padding:12px 6px;font-size:13px}
+ .gold-details h2 br{display:none}
+}
+
+
+.valuation-story{display:grid;grid-template-columns:1fr 1fr;background:#f2edef}
+.valuation-photo{margin:0;position:relative;min-height:560px;background:#1a1719;overflow:hidden}
+.valuation-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.valuation-photo:after{content:"";position:absolute;inset:50% 0 0;background:linear-gradient(transparent,#170e14df)}
+.valuation-photo figcaption{position:absolute;bottom:32px;left:32px;right:24px;z-index:1;color:white;font:30px/1.15 var(--serif)}
+.valuation-factors{padding:36px 42px}
+.valuation-factors article{padding:20px 0;border-bottom:1px solid #d6c9cf}
+.valuation-factors article:first-child{padding-top:0}
+.valuation-factors article>span{color:var(--wine);font-size:12px;font-weight:650;letter-spacing:.06em}
+.valuation-factors h3{font:27px/1.15 var(--serif);margin-top:8px}
+.valuation-factors p{font-size:15px;color:var(--muted);margin-top:10px}
+.valuation-factors .button{margin-top:25px}
+@media(max-width:600px){
+ .valuation-story{grid-template-columns:minmax(0,1fr)}
+ .valuation-photo{min-height:0;aspect-ratio:1.25}
+ .valuation-photo figcaption{font-size:25px;left:20px;bottom:20px}
+ .valuation-factors{padding:25px 20px}
+ .valuation-factors h3{font-size:25px}
+}
+
+.price-layout{display:block;background:#f5eff2;color:#362630;padding:0;border:1px solid #dfd0d7;border-radius:4px;overflow:hidden;max-width:800px;margin-inline:auto}
+.price-heading{display:flex;align-items:end;justify-content:space-between;gap:20px;padding:28px 32px;background:#ece0e6;border-bottom:1px solid #d9c6d0}
+.price-heading .eyebrow{margin-bottom:7px;color:#762e45;font-size:11px}
+.price-heading h2{font-size:38px;color:#482332;line-height:1.1}
+.price-unit{font-size:13px;color:#74616b;white-space:nowrap;padding-bottom:4px}
+.price-layout table{background:#fffcfd;color:#362630;font-size:16px}
+.price-layout th,.price-layout td{padding:18px 32px;border-color:#e9dfe4}
+.price-layout thead th{background:#f5eff2;font-size:12px;font-weight:650;color:#78636e;padding-block:12px}
+.price-layout thead th:last-child{text-align:right}
+.price-layout tbody th{font-weight:450}
+.price-layout tbody td{font-size:21px;font-weight:600;font-variant-numeric:tabular-nums;color:#62283e;letter-spacing:-.025em}
+.price-layout tbody tr:last-child th,.price-layout tbody tr:last-child td{border-bottom:0}
+.price-layout .price-footnote{margin:0;padding:18px 32px;border-top:1px solid #dfd0d7;color:#75656d;font-size:12px;line-height:1.5;max-width:none}
+@media(max-width:600px){
+ .price-heading{padding:20px;align-items:start}
+ .price-heading h2{font-size:29px;max-width:10ch}
+ .price-unit{display:none}
+ .price-layout th,.price-layout td{padding:15px 14px}
+ .price-layout tbody th{font-size:13px}
+ .price-layout tbody td{font-size:17px}
+ .price-layout thead th{font-size:11px}
+ .price-layout .price-footnote{padding:16px;font-size:12px}
+}
